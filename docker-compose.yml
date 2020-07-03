@@ -1,0 +1,9 @@
+version: '2'
+services:
+    jetson-monitor:
+        image: juandiii/jetson-monitor:latest
+        restart: always
+        environment:
+            - LOG_LEVEL=DEBUG
+        volumes: 
+            - ${PWD}:/var/jetson-monitor
